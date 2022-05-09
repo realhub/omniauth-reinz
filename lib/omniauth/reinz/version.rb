@@ -1,5 +1,5 @@
 module Omniauth
-  module Reinz
-    VERSION = "0.1.0"
+  module REINZ
+    VERSION = "1.0.0"
   end
 end
