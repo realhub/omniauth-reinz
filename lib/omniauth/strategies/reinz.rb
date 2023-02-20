@@ -1,4 +1,4 @@
-require "omniauth/strategies/reinz"
+require 'omniauth/strategies/oauth2'
 
 # Potential scopes: 
 # ------
@@ -9,8 +9,8 @@ require "omniauth/strategies/reinz"
 module OmniAuth
   module Strategies
     class REINZ < OmniAuth::Strategies::OAuth2
-      STAGING_URL = 'https://reinztestorg.b2clogin.com/reinztestorg.onmicrosoft.com/b2c_1a_signup_signin/'.freeze
-      PRODUCTION_URL = 'https://login.reinz.co.nz/reinzorg.onmicrosoft.com/b2c_1a_signup_signin/'.freeze
+      STAGING_URL = 'https://reinztestorg.b2clogin.com/reinztestorg.onmicrosoft.com/b2c_1a_csi_signup_signin/'.freeze
+      PRODUCTION_URL = 'https://login.reinz.co.nz/reinzorg.onmicrosoft.com/b2c_1a_csi_signup_signin/'.freeze
       
       option :name, 'reinz'
 
